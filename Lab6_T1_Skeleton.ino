@@ -55,7 +55,7 @@ void getState(){
 /*Modify this function*/ 
 double getPosition() {
   // Calculate the current position based on encoder count
-  position = float(encoderCount)*360.0/1008.0; // Replace 1000.0 with the actual counts per revolution
+  position = float(encoderCount)*360.0/220.0; // Replace 1000.0 with the actual counts per revolution
 
   if (position<0)
   {position = position + 360; // Ensure position is positive
